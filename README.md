@@ -2,7 +2,7 @@
 
 Простой курс для не-программистов: от «что такое LLM» до настройки MCP, loop engineering и прототипов в вёрстке.
 
-**Время:** ~6,5 часов · **Модулей:** 8 + capstone · **Презентация:** [Figma Slides](https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx)
+**Время:** ~6,5 часов · **Модулей:** 8 + capstone
 
 ---
 
@@ -11,7 +11,6 @@
 1. Читай `lesson.md` модуля (15–20 мин).
 2. Делай практику из урока (20–30 мин).
 3. Пройди `quiz.md` — нужно ≥80%.
-4. Смотри слайды в Figma (тот же модуль).
 
 Каждый модуль: **термин → аналогия → пример**. Точные названия важны — их найдёшь в [glossary.md](glossary.md).
 
@@ -53,15 +52,6 @@
 - [Cursor](https://cursor.com) — для практики с MCP
 - Аккаунты по желанию: ChatGPT / Claude / Perplexity, Firecrawl API
 - [Obsidian](https://obsidian.md) — для модуля MCP (Obsidian-стек)
-
----
-
-## Презентация
-
-- **Figma:** https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx
-- **Сборка слайдов:** [figma/BUILD.md](figma/BUILD.md) + скрипт [figma/build-scripts/build-all.js](figma/build-scripts/build-all.js)
-- **План слайдов:** [figma/slides-plan.md](figma/slides-plan.md)
-- **Стиль:** [figma/style-guide.md](figma/style-guide.md)
 
 ---
 

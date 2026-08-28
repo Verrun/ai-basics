@@ -68,7 +68,6 @@
 
 - [README.md](../../README.md) — оглавление
 - [glossary.md](../../glossary.md) — термины
-- [Figma Slides](https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx)
 - [MCP Registry](https://registry.modelcontextprotocol.io)
 
 ---

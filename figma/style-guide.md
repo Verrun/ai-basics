@@ -1,96 +1,34 @@
 # Style Guide — презентация курса
 
-**Figma:** https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx  
-**fileKey:** `HlZmQbpsh71153lQEtXvmx`
+## Design file (основной)
+
+**Страница:** Ai-basics · **Шаблон:** BB / 1.1 Что это (`561:29`)
+
+### Макет слайда (1440×800)
+
+| Зона | Стиль |
+|------|--------|
+| Sidebar | bg ghost `#f0f0fa`, Factor IO Bold 18px / 25px |
+| Активная секция | `#702ff4` |
+| Неактивная секция | `#020222` |
+| Content bg | white |
+| Заголовок | Factor IO Bold 40px / 48px |
+| Тело | Factor IO Regular 18px / 24px, две колонки |
+| Скругление | 40px |
+
+**Секции в sidebar:** Intro · Basics · Models · Harness · MCP · Loops · Prototypes · Research · Capstone
+
+**Сборка:** [build-scripts/build-design.js](build-scripts/build-design.js) — клон шаблона + контент из `slides-plan.md`
 
 ---
 
-## Палитра
+## Slides file (legacy)
 
-| Роль | HEX | Использование |
-|------|-----|---------------|
-| bgDark | `#1E3A5F` | Титульные слайды, секции |
-| bgLight | `#F5F7FA` | Контентные слайды |
-| bgWhite | `#FFFFFF` | Альтернатива для контента |
-| accent | `#2DD4BF` | Стрелки, ключевые слова, акценты |
-| textDark | `#1A1A2E` | Текст на светлом фоне |
-| textLight | `#FFFFFF` | Текст на тёмном фоне |
-| textMuted | `#64748B` | Аналогии, подписи |
+**Сборка:** [build-scripts/build-all.js](build-scripts/build-all.js)
 
----
-
-## Типографика
-
-**Шрифт:** Montserrat (Google Fonts)
-
-| Стиль | Weight | Размер | Где |
-|-------|--------|--------|-----|
-| Заголовок слайда | Bold (700) | 44–52 px | 1 на слайд |
-| Подзаголовок | Semi Bold (600) | 28–32 px | Секции, схемы |
-| Основной текст | Regular (400) | 22–26 px | Буллеты |
-| Термин | Bold + accent | 22–26 px | LLM, harness, MCP |
-| Аналогия | Regular Italic | 18–20 px | Вторая строка под термином |
-| Мелкий текст | Regular | 16 px | Подписи, footer |
-
----
-
-## Макеты слайдов
-
-### Титульный (Intro, начало секции)
-
-- Фон: `bgDark`
-- Заголовок: белый, Bold, верхняя треть
-- Подзаголовок: accent или muted, Regular
-- Декор: тонкая линия accent слева или снизу
-
-### Контентный
-
-- Фон: `bgLight` или белый
-- Заголовок: `textDark`, Bold, верхний левый угол
-- Буллеты: max 5, Regular, `textDark`
-- Термин: Bold + accent; аналогия — italic, `textMuted`, строкой ниже
-
-### Схема (harness, loop, MCP)
-
-- Фон: `bgLight`
-- Блоки: скруглённые прямоугольники, `bgDark` или белый с border
-- Стрелки: accent, 2–3 px
-- Подписи: Semi Bold, 18 px
-
----
-
-## Правила контента
-
-1. **1 мысль на слайд** — не больше
-2. **3–5 буллетов max** — если больше, разбить на 2 слайда
-3. **Термин + аналогия** — термин Bold/accent, аналогия italic ниже
-4. **Speaker notes** — 2–4 пункта на каждый слайд
-
----
-
-## Секции (SLIDE_ROW)
-
-| № | Название | Слайдов | Цвет акцента секции |
-|---|----------|---------|---------------------|
-| 1 | Intro | 3 | accent |
-| 2 | Basics | 6 | accent |
-| 3 | Models | 7 | accent |
-| 4 | Harness | 5 | accent |
-| 5 | MCP | 7 | accent |
-| 6 | Loops | 7 | accent |
-| 7 | Prototypes | 7 | accent |
-| 8 | Research | 6 | accent |
-| 9 | Capstone | 8 | accent |
-
-**Итого:** ~54 слайда
-
----
-
-## Speaker notes — шаблон
-
-```
-• Главная мысль этого слайда (1 предложение)
-• Что подчеркнуть вслух
-• Пример или история (если есть)
-• Переход к следующему слайду
-```
+| Элемент | Style |
+|---------|--------|
+| Фон | `#020222` (`slide.fills`) |
+| Заголовок | Header 2 — Montserrat Bold 48px / 140% |
+| Текст | Body 1 — Montserrat Regular 36px / 120%, переменная White |
+| Шильдик | `#2DD4BF` |

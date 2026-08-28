@@ -1,6 +1,4 @@
-# План слайдов (1:1 с Figma)
-
-**Figma:** https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx
+# План слайдов (1:1 с презентацией)
 
 ---
 

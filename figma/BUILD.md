@@ -1,6 +1,6 @@
 # Figma Build Instructions
 
-Презентация: https://www.figma.com/slides/HlZmQbpsh71153lQEtXvmx
+Скрипты сборки презентации (файлы Figma — внутренние, не публикуются в репозитории).
 
 ## Текущий статус (28.08.2026)
 
@@ -10,7 +10,7 @@
 
 ## Быстрый старт
 
-1. Открой **Figma Desktop** и файл Slides по ссылке выше.
+1. Открой **Figma Desktop** и нужный файл Slides (fileKey в `build-all.js`).
 2. В Cursor (Agent mode) скажи:
 
 ```

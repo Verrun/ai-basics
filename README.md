@@ -4,6 +4,14 @@
 
 **Время:** ~7 часов · **Модулей:** 9 + capstone
 
+**Что разберёшь:**
+- **Harness и MCP** — как AI подключается к Figma, браузеру, Obsidian
+- **CLI** — текстовые команды в терминале (М3b); учить синтаксис не нужно, Agent запускает их за тебя
+- **Loop engineering** — циклы «сделал → проверил → поправил»
+- **Поиск в интернете** (М6) — Perplexity, Firecrawl, fact-check
+- **RAG-поиск** (М6b) — ответы по *твоим* документам: сначала найти нужный кусок, потом сгенерировать ответ
+- **Прототипы** — HTML-лендинг или слайд без изучения кода
+
 ---
 
 ## Как проходить курс
@@ -30,6 +38,8 @@
 | 6 | [Поиск в интернете](modules/06-web-research/lesson.md) | 50 мин | [quiz](modules/06-web-research/quiz.md) |
 | 6b | [RAG-поиск](modules/06b-rag/lesson.md) | 40 мин | [quiz](modules/06b-rag/quiz.md) |
 | 7 | [Capstone + финал](modules/07-capstone/lesson.md) | 60 мин | [quiz](modules/07-capstone/quiz.md) |
+
+**М6 vs М6b:** интернет — сайты снаружи; RAG — твои PDF, заметки, база знаний. Оба модуля с fact-check.
 
 ---
 
@@ -62,8 +72,8 @@
 ```
 ai/
 ├── README.md          ← ты здесь
-├── glossary.md
-├── figma/
-├── modules/           ← уроки и тесты
+├── glossary.md        ← термины (LLM, MCP, CLI, RAG, …)
+├── figma/             ← план слайдов (без публичных ссылок)
+├── modules/           ← уроки и тесты (00–07, 03b, 06b)
 └── exercises/         ← брифы и чеклисты
 ```

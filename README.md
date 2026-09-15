@@ -1,8 +1,8 @@
 # Мини-курс «AI от основ до harness и loop engineering»
 
-Простой курс для не-программистов: от «что такое LLM» до настройки MCP, loop engineering и прототипов в вёрстке.
+Простой курс для не-программистов: от «что такое LLM» до настройки MCP, loop engineering, RAG и прототипов в вёрстке.
 
-**Время:** ~6,5 часов · **Модулей:** 8 + capstone
+**Время:** ~7 часов · **Модулей:** 9 + capstone
 
 ---
 
@@ -28,6 +28,7 @@
 | 4 | [Loop engineering](modules/04-loop-engineering/lesson.md) | 55 мин | [quiz](modules/04-loop-engineering/quiz.md) |
 | 5 | [Прототипы в вёрстке](modules/05-prototypes/lesson.md) | 60 мин | [quiz](modules/05-prototypes/quiz.md) |
 | 6 | [Поиск в интернете](modules/06-web-research/lesson.md) | 50 мин | [quiz](modules/06-web-research/quiz.md) |
+| 6b | [RAG-поиск](modules/06b-rag/lesson.md) | 40 мин | [quiz](modules/06b-rag/quiz.md) |
 | 7 | [Capstone + финал](modules/07-capstone/lesson.md) | 60 мин | [quiz](modules/07-capstone/quiz.md) |
 
 ---
@@ -43,6 +44,7 @@
 | [prototype-brief.md](exercises/prototype-brief.md) | М5 |
 | [research-brief.md](exercises/research-brief.md) | М6 |
 | [github-tools-list.md](exercises/github-tools-list.md) | М6 |
+| [rag-brief.md](exercises/rag-brief.md) | М6b |
 
 ---
 

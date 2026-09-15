@@ -61,6 +61,7 @@
 - Настраивать harness и MCP
 - Проектировать loop с maker/checker
 - Делать прототипы и research с fact-check
+- Отличать веб-поиск от RAG по своим документам
 
 ---
 

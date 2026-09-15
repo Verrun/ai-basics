@@ -9,7 +9,7 @@
 - **CLI** — текстовые команды в терминале (М3b); учить синтаксис не нужно, Agent запускает их за тебя
 - **Loop engineering** — циклы «сделал → проверил → поправил»
 - **Поиск в интернете** (М6) — Perplexity, Firecrawl, fact-check
-- **RAG-поиск** (М6b) — ответы по *твоим* документам: сначала найти нужный кусок, потом сгенерировать ответ
+- **RAG-поиск** (М6b) — ответы по *твоим* документам; локальные эмбеддинги **e5-small**; проверка поиска через **golden set**
 - **Прототипы** — HTML-лендинг или слайд без изучения кода
 
 ---
@@ -36,7 +36,7 @@
 | 4 | [Loop engineering](modules/04-loop-engineering/lesson.md) | 55 мин | [quiz](modules/04-loop-engineering/quiz.md) |
 | 5 | [Прототипы в вёрстке](modules/05-prototypes/lesson.md) | 60 мин | [quiz](modules/05-prototypes/quiz.md) |
 | 6 | [Поиск в интернете](modules/06-web-research/lesson.md) | 50 мин | [quiz](modules/06-web-research/quiz.md) |
-| 6b | [RAG-поиск](modules/06b-rag/lesson.md) | 40 мин | [quiz](modules/06b-rag/quiz.md) |
+| 6b | [RAG-поиск](modules/06b-rag/lesson.md) | 50 мин | [quiz](modules/06b-rag/quiz.md) |
 | 7 | [Capstone + финал](modules/07-capstone/lesson.md) | 60 мин | [quiz](modules/07-capstone/quiz.md) |
 
 **М6 vs М6b:** интернет — сайты снаружи; RAG — твои PDF, заметки, база знаний. Оба модуля с fact-check.

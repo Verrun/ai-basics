@@ -1,10 +1,11 @@
 # Мини-курс «AI от основ до harness и loop engineering»
 
-Простой курс для не-программистов: от «что такое LLM» до настройки MCP, loop engineering, RAG и прототипов в вёрстке.
+Простой курс для не-программителей: от «что такое LLM» до настройки MCP, loop engineering, RAG и прототипов в вёрстке.
 
-**Время:** ~7 часов · **Модулей:** 9 + capstone
+**Время:** ~12 часов · **Модулей:** 9 + capstone + блок основ разработки (9)
 
 **Что разберёшь:**
+- **Основы разработки** (блок «Как устроена разработка») — фронтенд/бекенд/API/БД, терминал и окружение, HTTP/JSON/DevTools, SQL и миграции, Git, отладка, безопасность и секреты, деплой и продакшен, работа с кодинг-агентом
 - **Harness и MCP** — как AI подключается к Figma, браузеру, Obsidian
 - **CLI** — текстовые команды в терминале (М3b); учить синтаксис не нужно, Agent запускает их за тебя
 - **Loop engineering** — циклы «сделал → проверил → поправил»
@@ -43,6 +44,26 @@
 
 ---
 
+## Блок «Как устроена разработка» (Ф1–Ф9)
+
+Отдельный большой блок основ для тех, кто хочет понимать, **из чего состоит приложение** и **как разговаривать с разработкой и кодинг-агентом на одном языке**. Уровень — ELI5: каждая тема через бытовую аналогию. Можно проходить до основного курса, между модулями или отдельно.
+
+| № | Модуль | Время | Материалы |
+|---|--------|-------|-----------|
+| Ф1 | [Как устроено приложение: фронтенд, бекенд, API и база данных](fundamentals/01-web-app-anatomy/lesson.md) | 35 мин | [quiz](fundamentals/01-web-app-anatomy/quiz.md) |
+| Ф2 | [Терминал, файлы, зависимости и переменные окружения](fundamentals/02-terminal-files-env/lesson.md) | 35 мин | [quiz](fundamentals/02-terminal-files-env/quiz.md) |
+| Ф3 | [HTTP, JSON, DevTools: как работает API](fundamentals/03-http-json-devtools/lesson.md) | 35 мин | [quiz](fundamentals/03-http-json-devtools/quiz.md) |
+| Ф4 | [SQL, связи в базе данных, схемы и миграции](fundamentals/04-sql-schema-migrations/lesson.md) | 35 мин | [quiz](fundamentals/04-sql-schema-migrations/quiz.md) |
+| Ф5 | [Git: коммиты, diff, ветки, remote и безопасный откат](fundamentals/05-git-safety/lesson.md) | 40 мин | [quiz](fundamentals/05-git-safety/quiz.md) |
+| Ф6 | [Stack trace, логи и системная отладка ошибок](fundamentals/06-debugging/lesson.md) | 35 мин | [quiz](fundamentals/06-debugging/quiz.md) |
+| Ф7 | [Основы безопасности и работа с секретами](fundamentals/07-security-secrets/lesson.md) | 35 мин | [quiz](fundamentals/07-security-secrets/quiz.md) |
+| Ф8 | [Деплой, продакшен, мониторинг и бэкапы](fundamentals/08-deploy-production/lesson.md) | 35 мин | [quiz](fundamentals/08-deploy-production/quiz.md) |
+| Ф9 | [Как ставить задачи кодинг-агенту и проверять его результат](fundamentals/09-coding-agent-tasks/lesson.md) | 40 мин | [quiz](fundamentals/09-coding-agent-tasks/quiz.md) |
+
+**Логика блока:** Ф1–Ф3 — из чего состоит приложение и как его части общаются; Ф4–Ф6 — данные, версионирование и отладка; Ф7–Ф9 — безопасность, продакшен и работа с кодинг-агентом (финал блока, мостик к М4).
+
+---
+
 ## Практические материалы
 
 | Файл | Для какого модуля |
@@ -75,5 +96,6 @@ ai/
 ├── glossary.md        ← термины (LLM, MCP, CLI, RAG, …)
 ├── figma/             ← план слайдов (без публичных ссылок)
 ├── modules/           ← уроки и тесты (00–07, 03b, 06b)
+├── fundamentals/      ← блок «Как устроена разработка» (Ф1–Ф9)
 └── exercises/         ← брифы и чеклисты
 ```

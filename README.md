@@ -2,15 +2,16 @@
 
 Простой курс для не-программителей: от «что такое LLM» до настройки MCP, loop engineering, RAG и прототипов в вёрстке.
 
-**Время:** ~12 часов · **Модулей:** 9 + capstone + блок основ разработки (9)
+**Время:** ~13 часов · **Модулей:** 10 + capstone + блок основ разработки (9)
 
 **Что разберёшь:**
 - **Основы разработки** (блок «Как устроена разработка») — фронтенд/бекенд/API/БД, терминал и окружение, HTTP/JSON/DevTools, SQL и миграции, Git, отладка, безопасность и секреты, деплой и продакшен, работа с кодинг-агентом
 - **Harness и MCP** — как AI подключается к Figma, браузеру, Obsidian
-- **CLI** — текстовые команды в терминале (М3b); учить синтаксис не нужно, Agent запускает их за тебя
+- **CLI** — текстовые команды в терминале (М4); учить синтаксис не нужно, Agent запускает их за тебя
 - **Loop engineering** — циклы «сделал → проверил → поправил»
-- **Поиск в интернете** (М6) — Perplexity, Firecrawl, fact-check
-- **RAG-поиск** (М6b) — ответы по *твоим* документам; локальные эмбеддинги **e5-small**; проверка поиска через **golden set**
+- **Поиск в интернете** (М7) — Perplexity, Firecrawl, fact-check
+- **RAG-поиск** (М8) — ответы по *твоим* документам; локальные эмбеддинги **e5-small**; проверка поиска через **golden set**
+- **Веса моделей и Hugging Face** (М9) — что такое веса, открытые vs закрытые веса, лицензии в карточках моделей
 - **Прототипы** — HTML-лендинг или слайд без изучения кода
 
 ---
@@ -33,14 +34,17 @@
 | 1 | [Что такое AI](modules/01-basics/lesson.md) | 45 мин | [quiz](modules/01-basics/quiz.md) |
 | 2 | [Модели и промпты](modules/02-models-and-prompts/lesson.md) | 50 мин | [quiz](modules/02-models-and-prompts/quiz.md) |
 | 3 | [Harness](modules/03-harness/lesson.md) | 40 мин | [quiz](modules/03-harness/quiz.md) |
-| 3b | [MCP и плагины](modules/03b-mcp-and-plugins/lesson.md) | 50 мин | [quiz](modules/03b-mcp-and-plugins/quiz.md) |
-| 4 | [Loop engineering](modules/04-loop-engineering/lesson.md) | 55 мин | [quiz](modules/04-loop-engineering/quiz.md) |
-| 5 | [Прототипы в вёрстке](modules/05-prototypes/lesson.md) | 60 мин | [quiz](modules/05-prototypes/quiz.md) |
-| 6 | [Поиск в интернете](modules/06-web-research/lesson.md) | 50 мин | [quiz](modules/06-web-research/quiz.md) |
-| 6b | [RAG-поиск](modules/06b-rag/lesson.md) | 50 мин | [quiz](modules/06b-rag/quiz.md) |
-| 7 | [Capstone + финал](modules/07-capstone/lesson.md) | 60 мин | [quiz](modules/07-capstone/quiz.md) |
+| 4 | [MCP и плагины](modules/04-mcp-and-plugins/lesson.md) | 50 мин | [quiz](modules/04-mcp-and-plugins/quiz.md) |
+| 5 | [Loop engineering](modules/05-loop-engineering/lesson.md) | 55 мин | [quiz](modules/05-loop-engineering/quiz.md) |
+| 6 | [Прототипы в вёрстке](modules/06-prototypes/lesson.md) | 60 мин | [quiz](modules/06-prototypes/quiz.md) |
+| 7 | [Поиск в интернете](modules/07-web-research/lesson.md) | 50 мин | [quiz](modules/07-web-research/quiz.md) |
+| 8 | [RAG-поиск](modules/08-rag/lesson.md) | 50 мин | [quiz](modules/08-rag/quiz.md) |
+| 9 | [Веса моделей и Hugging Face](modules/09-hugging-face-weights/lesson.md) | 45 мин | [quiz](modules/09-hugging-face-weights/quiz.md) |
+| 10 | [Capstone + финал](modules/10-capstone/lesson.md) | 60 мин | [quiz](modules/10-capstone/quiz.md) |
 
-**М6 vs М6b:** интернет — сайты снаружи; RAG — твои PDF, заметки, база знаний. Оба модуля с fact-check.
+**М7 vs М8:** интернет — сайты снаружи; RAG — твои PDF, заметки, база знаний. Оба модуля с fact-check.
+
+**М8 vs М9:** RAG — *зачем* нужен локальный поиск; М9 — *что* за файлы при этом скачиваются (веса) и где они живут (Hugging Face).
 
 ---
 
@@ -60,7 +64,7 @@
 | Ф8 | [Деплой, продакшен, мониторинг и бэкапы](fundamentals/08-deploy-production/lesson.md) | 35 мин | [quiz](fundamentals/08-deploy-production/quiz.md) |
 | Ф9 | [Как ставить задачи кодинг-агенту и проверять его результат](fundamentals/09-coding-agent-tasks/lesson.md) | 40 мин | [quiz](fundamentals/09-coding-agent-tasks/quiz.md) |
 
-**Логика блока:** Ф1–Ф3 — из чего состоит приложение и как его части общаются; Ф4–Ф6 — данные, версионирование и отладка; Ф7–Ф9 — безопасность, продакшен и работа с кодинг-агентом (финал блока, мостик к М4).
+**Логика блока:** Ф1–Ф3 — из чего состоит приложение и как его части общаются; Ф4–Ф6 — данные, версионирование и отладка; Ф7–Ф9 — безопасность, продакшен и работа с кодинг-агентом (финал блока, мостик к М5).
 
 ---
 
@@ -70,12 +74,12 @@
 |------|-------------------|
 | [prompt-template.md](exercises/prompt-template.md) | М2 |
 | [harness-checklist.md](exercises/harness-checklist.md) | М3 |
-| [mcp-setup-guide.md](exercises/mcp-setup-guide.md) | М3b |
-| [loop-scenario.md](exercises/loop-scenario.md) | М4 |
-| [prototype-brief.md](exercises/prototype-brief.md) | М5 |
-| [research-brief.md](exercises/research-brief.md) | М6 |
-| [github-tools-list.md](exercises/github-tools-list.md) | М6 |
-| [rag-brief.md](exercises/rag-brief.md) | М6b |
+| [mcp-setup-guide.md](exercises/mcp-setup-guide.md) | М4 |
+| [loop-scenario.md](exercises/loop-scenario.md) | М5 |
+| [prototype-brief.md](exercises/prototype-brief.md) | М6 |
+| [research-brief.md](exercises/research-brief.md) | М7 |
+| [github-tools-list.md](exercises/github-tools-list.md) | М7 |
+| [rag-brief.md](exercises/rag-brief.md) | М8 |
 
 ---
 
@@ -95,7 +99,7 @@ ai/
 ├── README.md          ← ты здесь
 ├── glossary.md        ← термины (LLM, MCP, CLI, RAG, …)
 ├── figma/             ← план слайдов (без публичных ссылок)
-├── modules/           ← уроки и тесты (00–07, 03b, 06b)
+├── modules/           ← уроки и тесты (00–10)
 ├── fundamentals/      ← блок «Как устроена разработка» (Ф1–Ф9)
 └── exercises/         ← брифы и чеклисты
 ```

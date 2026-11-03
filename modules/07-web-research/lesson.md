@@ -1,10 +1,10 @@
-# М6. Поиск информации в интернете
+# М7. Поиск информации в интернете
 
 ## За 2 минуты
 
 Perplexity — ответ + ссылки. MCP (Firecrawl, MarkItDown) — AI ищет сам в Cursor. Всегда **fact-check**: 2 источника, дата, автор.
 
-*Интернет — снаружи. Поиск по своим файлам (RAG) — в [М6b](../06b-rag/lesson.md).*
+*Интернет — снаружи. Поиск по своим файлам (RAG) — в [М8](../08-rag/lesson.md).*
 
 ---
 
@@ -73,5 +73,5 @@ Open-source инструменты для research — список в [github-t
 ## Что дальше
 
 → [quiz.md](quiz.md)  
-→ [М6b. RAG-поиск](../06b-rag/lesson.md) — поиск по *твоим* документам  
-→ [М7. Capstone](../07-capstone/lesson.md)
+→ [М8. RAG-поиск](../08-rag/lesson.md) — поиск по *твоим* документам  
+→ [М10. Capstone](../10-capstone/lesson.md)

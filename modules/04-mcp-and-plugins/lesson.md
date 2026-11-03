@@ -1,4 +1,4 @@
-# М3b. MCP и плагины Cursor
+# М4. MCP и плагины Cursor
 
 ## За 2 минуты
 
@@ -122,4 +122,4 @@
 ## Что дальше
 
 → [quiz.md](quiz.md)  
-→ [М4. Loop engineering](../04-loop-engineering/lesson.md)
+→ [М5. Loop engineering](../05-loop-engineering/lesson.md)

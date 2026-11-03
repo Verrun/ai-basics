@@ -1,4 +1,4 @@
-# М4. Loop engineering
+# М5. Loop engineering
 
 ## За 2 минуты
 
@@ -81,4 +81,4 @@ Checker — ты, коллега или **отдельный** AI с други�
 ## Что дальше
 
 → [quiz.md](quiz.md)  
-→ [М5. Прототипы](../05-prototypes/lesson.md)
+→ [М6. Прототипы](../06-prototypes/lesson.md)

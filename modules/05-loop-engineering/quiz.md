@@ -1,4 +1,4 @@
-# Quiz — М4. Loop engineering
+# Quiz — М5. Loop engineering
 
 **Порог:** ≥80% (4 из 5 правильных)
 

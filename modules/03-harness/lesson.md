@@ -67,4 +67,4 @@
 ## Что дальше
 
 → [quiz.md](quiz.md)  
-→ [М3b. MCP и плагины](../03b-mcp-and-plugins/lesson.md)
+→ [М4. MCP и плагины](../04-mcp-and-plugins/lesson.md)

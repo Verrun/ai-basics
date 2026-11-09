@@ -467,7 +467,7 @@
 - Все модули курса
 - MCP vs plugin, выбор инструмента
 - Эссе: «объясни harness, MCP и loop бабушке»
-**Notes:** modules/10-capstone/quiz.md.
+**Notes:** modules/11-capstone/quiz.md.
 
 ### S55 — Спасибо
 **Заголовок:** Курс пройден  

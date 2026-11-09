@@ -102,4 +102,4 @@
 ## Что дальше
 
 → [quiz.md](quiz.md)  
-→ [М10. Capstone](../10-capstone/lesson.md)
+→ [М10. Frontier и другие модели](../10-frontier-and-other-models/lesson.md)

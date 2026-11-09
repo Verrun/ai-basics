@@ -74,4 +74,4 @@ Open-source инструменты для research — список в [github-t
 
 → [quiz.md](quiz.md)  
 → [М8. RAG-поиск](../08-rag/lesson.md) — поиск по *твоим* документам  
-→ [М10. Capstone](../10-capstone/lesson.md)
+→ [М11. Capstone](../11-capstone/lesson.md)

@@ -23,7 +23,7 @@
 
 ### Шаг 2: Прототип (25 мин)
 
-**Инструмент:** Cursor + Figma MCP (или HTML)
+**Инструмент:** OpenCode + Figma MCP (или HTML)
 
 **Задача:**
 - Лендинг (index.html) **или** один слайд в Figma

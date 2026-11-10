@@ -11,7 +11,7 @@
 ## Быстрый старт
 
 1. Открой **Figma Desktop** и нужный файл Slides (fileKey в `build-all.js`).
-2. В Cursor (Agent mode) скажи:
+2. В OpenCode скажи:
 
 ```
 Выполни use_figma для fileKey HlZmQbpsh71153lQEtXvmx

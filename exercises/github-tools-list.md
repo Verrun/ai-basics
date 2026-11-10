@@ -18,7 +18,7 @@ perplexica
 - ⭐ Stars (популярность)
 - 📅 Последний коммит (активность)
 - 📖 README на понятном языке
-- 🔌 Есть ли MCP / Cursor integration
+- 🔌 Есть ли MCP / OpenCode integration
 
 ---
 
@@ -77,7 +77,7 @@ perplexica
 
 | Ситуация | Выбор |
 |----------|-------|
-| Быстро начать в Cursor | Firecrawl / Tavily MCP (plugin) |
+| Быстро начать в OpenCode | Firecrawl / Tavily MCP (plugin) |
 | Нужен полный контроль, self-host | GPT Researcher, Perplexica |
 | Прочитать один PDF | MarkItDown MCP |
 | Простой research с ссылками | Perplexity (не GitHub) |

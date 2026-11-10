@@ -46,4 +46,4 @@ _Твоё поле для ответа_
 2. **B** — AI создаёт, ты смотришь
 3. **B** — Секции, стиль, контент
 4. **B** — Проверка вёрстки
-5. *Cursor, Figma MCP, v0/Lovable, Chrome DevTools — любые 3*
+5. *OpenCode, Figma MCP, v0/Lovable, Chrome DevTools — любые 3*

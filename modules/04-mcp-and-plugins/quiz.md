@@ -38,7 +38,7 @@
 
 - [ ] A) Plannotator рисует картинки
 - [ ] B) Одобренные AI-планы сохраняются в vault Obsidian
-- [ ] C) Obsidian заменяет Cursor
+- [ ] C) Obsidian заменяет OpenCode
 - [ ] D) Работает только на Windows
 
 ### 6. Какой инструмент выбрать? *(сопоставь)*

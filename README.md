@@ -94,7 +94,7 @@
 ## Что понадобится
 
 - Браузер (Chrome или аналог)
-- [Cursor](https://cursor.com) — для практики с MCP
+- [OpenCode](https://opencode.ai) — кодинг-агент в терминале (для практики с MCP)
 - Аккаунты по желанию: ChatGPT / Claude / Perplexity, Firecrawl API
 - [Obsidian](https://obsidian.md) — для модуля MCP (Obsidian-стек)
 

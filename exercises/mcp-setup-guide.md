@@ -1,6 +1,6 @@
 # MCP Setup Guide
 
-Пошаговая установка MCP и плагинов в Cursor (модуль **М4**).
+Пошаговая установка MCP и плагинов в OpenCode (модуль **М4**).
 
 ---
 
@@ -8,14 +8,14 @@
 
 **CLI** (Command Line Interface) — программы, которыми управляют **командами** (`firecrawl`, `git`, `gh`), а не кнопками.
 
-**Терминал в Cursor:** меню **Terminal → New Terminal** — окно с приглашением вроде `$`.
+**Терминал** — окно с приглашением вроде `$`. OpenCode сам — программа терминала: открой папку проекта в терминале и запусти `opencode`.
 
 **Как это связано с курсом:**
-- Plugin (Firecrawl, Figma) — ставишь **кликом** в Settings.
-- MCP вручную — иногда в конфиге указана **CLI-команда** (`uvx …`, `npx …`).
-- Agent mode — AI **сам** пишет команды в терминал; ты смотришь результат.
+- MCP-серверы добавляются командой `opencode mcp add` или строкой в конфиге `opencode.jsonc`.
+- Плагины — ставятся командой (например, `npx oh-my-opencode-slim@latest install` — оркестрация из М11).
+- Агент — AI **сам** пишет команды в терминал; ты смотришь результат.
 
-**Практика (2 мин):** Agent mode → «Открой терминал и покажи текущую папку проекта. Объясни, что делает команда.»  
+**Практика (2 мин):** в чате агента: «Покажи текущую папку проекта и объясни, что делает команда ls.»  
 Не запускай сама, если не уверен:а — попроси AI объяснить перед подтверждением.
 
 ---
@@ -24,14 +24,14 @@
 
 ### Firecrawl (research)
 
-1. Cursor → **Settings** → **Plugins** (или Marketplace)
-2. Найди **Firecrawl** → **Install**
-3. Если нужен API key: зарегистрируйся на [firecrawl.dev](https://firecrawl.dev) → скопируй ключ в настройки plugin
-4. **Проверка:** Agent mode → «Найди в интернете 3 статьи про [твоя тема]»
+1. Получи бесплатный API-ключ на [firecrawl.dev](https://firecrawl.dev)
+2. Попроси агента: «подключи Firecrawl MCP» — или добавь через `opencode mcp add` (команда — в документации Firecrawl)
+3. Вставь ключ в конфиг сервера (`opencode.jsonc`, поле `environment`)
+4. **Проверка:** «Найди в интернете 3 статьи про [твоя тема]»
 
 ### Figma (design)
 
-1. Settings → Plugins → **Figma** → Install
+1. Попроси агента: «подключи Figma MCP» (установка — в документации Figma MCP)
 2. При первом использовании — авторизация через Figma
 3. **Проверка:** «Покажи структуру слайдов в файле [твой Figma URL]»
 
@@ -41,31 +41,32 @@
 
 ### Context7 (документация)
 
-1. Settings → Plugins → **Context7** → Install
+1. Подключи: `opencode mcp add context7 --url https://mcp.context7.com/mcp` (или попроси агента)
 2. **Проверка:** «Как установить Firecrawl CLI? Используй Context7.»
 
 ### MarkItDown (PDF → текст)
 
-1. Settings → **MCP** → Add server
-2. Конфиг (document-converter MCP):
-   ```json
+1. Добавь в конфиг `opencode.jsonc` (document-converter MCP):
+   ```jsonc
    {
-     "mcpServers": {
-       "document-converter": {
-         "command": "uvx",
-         "args": ["document-converter-mcp"]
+     "mcp": {
+       "servers": {
+         "document-converter": {
+           "type": "local",
+           "command": ["uvx", "document-converter-mcp"]
+         }
        }
      }
    }
    ```
    *(Точная команда — в [документации](https://github.com/Zahid-Abbas-Ali-Baig/document-converter))*
-3. **Проверка:** положи PDF в проект → «Прочитай этот PDF и перескажи главное»
+2. **Проверка:** положи PDF в проект → «Прочитай этот PDF и перескажи главное»
 
 ### Obsidian MCP Connector
 
 1. Установи [Obsidian](https://obsidian.md)
 2. Obsidian → Community plugins → **MCP Connector** → Install → Enable
-3. Settings → MCP Connector → Copy config → вставь в Cursor MCP settings
+3. Скопируй конфиг коннектора и добавь его как MCP-сервер в `opencode.jsonc` (или попроси агента: «перенеси конфиг Obsidian MCP в OpenCode»)
 4. **Проверка:** «Создай заметку "Тест MCP" в моём vault»
 
 ### Plannotator
@@ -76,8 +77,8 @@
 
 ### Chrome DevTools
 
-1. Settings → MCP → Add server (Chrome DevTools MCP)
-2. Документация: поиск «chrome devtools mcp cursor»
+1. Попроси агента: «подключи Chrome DevTools MCP» (или `opencode mcp add` с командой из документации)
+2. Документация: поиск «chrome devtools mcp»
 3. **Проверка:** открой HTML-страницу → «Проверь, почему элемент не по центру»
 
 ---
@@ -118,10 +119,10 @@
 
 | Проблема | Решение |
 |----------|---------|
-| MCP не виден | Перезапусти Cursor; проверь Settings → MCP |
+| MCP не виден | Перезапусти `opencode`; проверь `opencode mcp list` |
 | Firecrawl ошибка API | Проверь ключ; лимиты бесплатного плана |
 | Figma не авторизуется | Выйди и войди снова в Figma account |
-| Obsidian MCP не подключается | Plugin включён? Vault открыт? Config скопирован? |
+| Obsidian MCP не подключается | Plugin включён? Vault открыт? Конфиг добавлен в `opencode.jsonc`? |
 
 ---
 

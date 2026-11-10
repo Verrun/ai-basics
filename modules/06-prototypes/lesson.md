@@ -12,7 +12,7 @@
 
 **Pipeline:**
 ```
-Текстовое ТЗ → AI (Cursor) → index.html → Браузер
+Текстовое ТЗ → AI (OpenCode) → index.html → Браузер
 ```
 
 **Prototype (прототип)** — черновая версия для проверки идеи, не финальный продукт.  
@@ -22,8 +22,8 @@
 
 | Инструмент | Как работает |
 |------------|--------------|
-| **Cursor** | Описал:а → AI создаёт файл |
-| **Figma MCP** | Слайды и макеты из Cursor |
+| **OpenCode** | Описал:а → AI создаёт файл |
+| **Figma MCP** | Слайды и макеты из OpenCode |
 | **v0 / Lovable** | No-code прототип в браузере |
 | **Chrome DevTools MCP** | AI проверяет вёрстку на живой странице |
 
@@ -56,7 +56,7 @@
 
 1. Открой [exercises/prototype-brief.md](../../exercises/prototype-brief.md).
 2. Заполни ТЗ на лендинг вымышленного продукта.
-3. В Cursor (Agent mode): «Создай index.html по этому ТЗ».
+3. В OpenCode: «Создай index.html по этому ТЗ».
 4. Открой `index.html` в браузере.
 5. *(Опционально)* Chrome DevTools MCP: «Проверь, почему [элемент] выглядит не так».
 
